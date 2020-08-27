@@ -1,5 +1,5 @@
 {
-  "name": "eth-trezor-keyring",
+  "name": "ubq-trezor-keyring",
   "version": "0.4.0",
   "description": "A MetaMask compatible keyring, for trezor hardware wallets",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metamask/eth-trezor-keyring.git"
+    "url": "git+https://github.com/ubiq/ubq-trezor-keyring.git"
   },
   "keywords": [
-    "ethereum",
+    "ubiq",
     "keyring",
     "trezor",
     "metamask"
@@ -21,9 +21,9 @@
   "author": "Bruno Barbieri",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/metamask/eth-trezor-keyring/issues"
+    "url": "https://github.com/ubiq/ubq-trezor-keyring/issues"
   },
-  "homepage": "https://github.com/metamask/eth-trezor-keyring#readme",
+  "homepage": "https://github.com/ubiq/ubq-trezor-keyring#readme",
   "resolutions": {
     "mocha/mkdirp": "^0.5.1"
   },

@@ -3,14 +3,14 @@ const ethUtil = require('ethereumjs-util')
 const Transaction = require('ethereumjs-tx')
 const HDKey = require('hdkey')
 const TrezorConnect = require('trezor-connect').default
-const hdPathString = `m/44'/60'/0'/0`
+const hdPathString = `m/44'/108'/0'/0`
 const keyringType = 'Trezor Hardware'
 const pathBase = 'm'
 const MAX_INDEX = 1000
 const DELAY_BETWEEN_POPUPS = 1000
 const TREZOR_CONNECT_MANIFEST = {
-  email: 'support@metamask.io',
-  appUrl: 'https://metamask.io',
+  email: 'support@ubiqsmart.com',
+  appUrl: 'https://ubiqsmart.com',
 }
 
 class TrezorKeyring extends EventEmitter {
@@ -55,7 +55,7 @@ class TrezorKeyring extends EventEmitter {
     return new Promise((resolve, reject) => {
       TrezorConnect.getPublicKey({
           path: this.hdPath,
-          coin: 'ETH',
+          coin: 'UBQ',
         }).then(response => {
           if (response.success) {
             this.hdk.publicKey = new Buffer(response.payload.publicKey, 'hex')
