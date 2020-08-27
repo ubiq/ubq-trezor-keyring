@@ -1,4 +1,4 @@
-eth-trezor-keyring [![CircleCI](https://circleci.com/gh/MetaMask/eth-trezor-keyring.svg?style=svg)](https://circleci.com/gh/MetaMask/eth-trezor-keyring)
+ubq-trezor-keyring [![CircleCI](https://circleci.com/gh/ubiq/ubq-trezor-keyring.svg?style=svg)](https://circleci.com/gh/ubiq/ubq-trezor-keyring)
 ==================
 
 An implementation of MetaMask's [Keyring interface](https://github.com/MetaMask/eth-simple-keyring#the-keyring-class-protocol), that uses a TREZOR hardware
@@ -24,7 +24,7 @@ there are a few others:
 
 - **isUnlocked** : Returns true if we have the public key in memory, which allows to generate the list of accounts at any time
 
-- **unlock** : Connects to the TREZOR device and exports the extended public key, which is later used to read the available ethereum addresses inside the trezor account.
+- **unlock** : Connects to the TREZOR device and exports the extended public key, which is later used to read the available ubiq addresses inside the trezor account.
 
 - **setAccountToUnlock** : the index of the account that you want to unlock in order to use with the signTransaction and signPersonalMessage methods
 
