@@ -1,7 +1,10 @@
 {
   "name": "ubq-trezor-keyring",
-  "version": "0.4.1",
+  "version": "0.5.2",
   "description": "A MetaMask compatible keyring, for trezor hardware wallets",
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -31,9 +34,8 @@
     "eth-sig-util": "^1.4.2",
     "ethereumjs-tx": "^1.3.4",
     "ethereumjs-util": "^5.1.5",
-    "events": "^2.0.0",
     "hdkey": "0.8.0",
-    "trezor-connect": "^7.0.1"
+    "trezor-connect": "8.1.19-extended"
   },
   "devDependencies": {
     "@metamask/eslint-config": "^3.0.0",
@@ -44,6 +46,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-mocha": "^6.2.2",
-    "mocha": "^5.0.4"
+    "mocha": "^5.0.4",
+    "sinon": "^9.2.3"
   }
 }
